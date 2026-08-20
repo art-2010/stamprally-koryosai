@@ -45,7 +45,7 @@ const AFTER_IMAGES = {
     spot11: 'stamp2/art-stamp2.gif',
     spot12: 'stamp2/book-stamp2.gif',
     spot13: 'stamp2/font-stamp2.gif',
-    spot14: 'stamp2/akatsuki-stamp2.gif'
+    spot14: 'stamp2/Akatsuki-stamp2.gif'
 };
 
 const TOTAL = 13;
