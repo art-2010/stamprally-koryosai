@@ -1,6 +1,6 @@
 const SPOT_PASSWORDS = {
     spot1: 'apple',
-    spot2: 'banana',
+    spot2: 'lifescience',
     spot3: 'pictures',
     spot4: 'durian',
     spot5: 'elderberry',
