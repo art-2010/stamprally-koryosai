@@ -1,17 +1,17 @@
 const SPOT_PASSWORDS = {
-    spot1: 'apple',
+    spot1: 'naniwaduni',
     spot2: 'lifescience',
     spot3: 'pictures',
-    spot4: 'durian',
-    spot5: 'elderberry',
-    spot6: 'fig',
-    spot7: 'grape',
-    spot8: 'honeydew',
+    spot4: 'flower',
+    spot5: 'showtime',
+    spot6: '310sado',
+    spot7: 'jrc2026',
+    spot8: 'explosion',
     spot9: 'climbing',
     spot10: 'gamestart',
-    spot11: 'kiwi',
-    spot12: 'lemon',
-    spot13: 'mango',
+    spot11: 'colorful',
+    spot12: 'literature',
+    spot13: 'calligraphy',
     spot14: 'akatsuki'
 };
 
