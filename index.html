@@ -11,18 +11,32 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXFHZRDGCF"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-             function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-　          gtag('config', 'G-JXFHZRDGCF');
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXFHZRDGCF"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-JXFHZRDGCF');
     </script>
 </head>
 
-<body class="bg-gradient-to-b from-[#E4C98A] via-[#E4C98A] via-[10%] via-[#4DA8DA] via-[30%] to-[#0077B6] text-[#123047] min-h-screen pb-12 font-sans font-medium overflow-x-hidden">
+
+<body
+    class="bg-gradient-to-b from-[#E4C98A] via-[#E4C98A] via-[10%] via-[#4DA8DA] via-[30%] to-[#0077B6] text-[#123047] min-h-screen pb-12 font-sans font-medium overflow-x-hidden"
+>
+
+
+    <!-- ========================================
+         ヘッダー
+    ======================================== -->
 
     <header class="text-center py-6 sm:py-8 px-4 border-b border-[#123047]/40">
+
         <h1 class="text-xl sm:text-2xl font-bold tracking-widest mb-1">
             紅陵祭巡り　~暁~
         </h1>
@@ -30,14 +44,32 @@
         <p class="text-[10px] sm:text-xs font-semibold tracking-wider">
             デジタルスタンプラリー
         </p>
+
     </header>
 
-    <main class="w-full mx-auto mt-3 sm:mt-4 text-center flex flex-col items-center px-3 sm:px-4">
+
+    <!-- ========================================
+         メイン
+    ======================================== -->
+
+    <main
+        class="w-full mx-auto mt-3 sm:mt-4 text-center flex flex-col items-center px-3 sm:px-4"
+    >
+
+
+        <!-- ========================================
+             スタンプ円
+        ======================================== -->
 
         <div
             id="circle-container"
             class="relative w-[68vw] h-[68vw] max-w-[380px] max-h-[380px] mt-4 sm:mt-6 mb-5 sm:mb-6 border-2 border-[#123047]/70 rounded-full flex items-center justify-center mx-auto flex-shrink-0"
         >
+
+
+            <!-- ========================================
+                 中央
+            ======================================== -->
 
             <div
                 id="center-display"
@@ -51,12 +83,18 @@
                     LOCKED
                 </div>
 
+
                 <div
                     id="center-text"
                     class="text-[9px] sm:text-xs tracking-widest text-[#005B82] uppercase font-bold"
                 >
                     0 / 13
                 </div>
+
+
+                <!-- ========================================
+                     FINAL SPOT
+                ======================================== -->
 
                 <button
                     id="spot14"
@@ -67,22 +105,34 @@
                 </button>
 
             </div>
+
         </div>
+
+
+        <!-- ========================================
+             メッセージ
+        ======================================== -->
 
         <section
             id="clear-message"
             class="hidden mt-3 sm:mt-4 w-full max-w-sm bg-[#123047]/90 border border-[#E7C98B] rounded-xl p-4 sm:p-5 shadow-lg"
         >
-            <p class="text-[11px] sm:text-xs font-bold text-white leading-relaxed tracking-wide">
-                スタンプコンプリート!!<br>
-                パソコンサイエンス部展示室にて景品を贈呈します
+
+            <p
+                id="clear-message-text"
+                class="text-[11px] sm:text-xs font-bold text-white leading-relaxed tracking-wide"
+            >
+                13個のスタンプを集めました！
             </p>
+
         </section>
 
     </main>
 
 
-    <!-- パスワードモーダル -->
+    <!-- ========================================
+         パスワードモーダル
+    ======================================== -->
 
     <div
         id="password-modal"
@@ -92,6 +142,10 @@
         <div
             class="bg-gradient-to-b from-[#0077B6] via-[#4DA8DA] to-[#D9BC83] border border-[#123047]/50 rounded-2xl w-full max-w-sm p-6 sm:p-8 shadow-2xl scale-95 transition-transform duration-300"
         >
+
+            <!-- ========================================
+                 モーダルタイトル
+            ======================================== -->
 
             <div class="text-center mb-5 sm:mb-6">
 
@@ -113,6 +167,10 @@
             </div>
 
 
+            <!-- ========================================
+                 パスワード入力
+            ======================================== -->
+
             <div class="mb-4 sm:mb-5">
 
                 <input
@@ -121,6 +179,7 @@
                     placeholder="******"
                     class="w-full bg-[#FFFDF7] border border-[#123047]/40 rounded-xl py-3 px-4 text-[#123047] font-semibold text-center text-base tracking-widest focus:outline-none focus:border-[#005B82] focus:ring-1 focus:ring-[#005B82]"
                 >
+
 
                 <p
                     id="password-error"
@@ -132,6 +191,10 @@
             </div>
 
 
+            <!-- ========================================
+                 ボタン
+            ======================================== -->
+
             <div class="flex gap-2 sm:gap-3">
 
                 <button
@@ -140,6 +203,7 @@
                 >
                     CANCEL
                 </button>
+
 
                 <button
                     onclick="submitPassword()"
@@ -151,11 +215,16 @@
             </div>
 
         </div>
+
     </div>
 
+
+    <!-- ========================================
+         JavaScript
+    ======================================== -->
 
     <script src="script.js"></script>
 
 </body>
-</html>
 
+</html>
