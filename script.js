@@ -761,8 +761,8 @@ function checkCompletion(effect) {
 
 
         messageText.innerHTML =
-            '13個のスタンプを集めました！<br>' +
-            '最後のスタンプを探してみよう！';
+            '13個のスタンプをコンプリートしました！<br>' +
+            '最後のスタンプはパソコンサイエンス部展示室へお越しください';
 
 
         return;
@@ -795,7 +795,7 @@ function checkCompletion(effect) {
 
 
         messageText.innerHTML =
-            'スタンプコンプリート!!<br>' +
+            'スタンプオールコンプリート!!<br>' +
             'パソコンサイエンス部展示室にて景品を贈呈します';
 
 
